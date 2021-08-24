@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+#container {
+    display: flex;
+    border: solid 1px brown;
+    max-width: 100%;
+    padding: 10px;
+    min-height: 90vh;
+}
+
+#form {
+    background-color: darkolivegreen;
+    min-width: 50%;
+}
+
+#table {
+    background-color: darkgrey;
+    max-width: 50%;
+    overflow-x: auto;
+}
+
+table {
+    border: solid 1px black;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+th,
+td {
+    border-collapse: collapse;
+    border: solid 2px black;
+}
+
+th,
+td {
+    height: 70px;
+    vertical-align: super;
+}
+
+#myForm {
+    margin: 10px;
+    padding: 10px;
+}
+
+input[type="text"] {
+    width: 50%;
+    border-radius: 15px;
+    border: hotpink;
+}
+
+#button {
+    width: 100%;
+    text-align: center;
+}
+
+.ele {
+    margin: 10px 0;
+    font-weight: bolder;
+}

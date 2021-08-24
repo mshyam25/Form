@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="document.registration.fname.focus();">
+    <div id="container">
+        <div id="form">
+            <form id="myForm" name='registration' method="POST">
+                <label for="fname" class="ele">First Name : </label>
+                <input type="text" id="fname" name="First_Name" placeholder="Enter your First Name" maxlength="15" class="ele">
+                <br>
+                <label for="lname" class="ele">Last Name : </label>
+                <input type="text" id="lname" name="Last_Name" placeholder="Enter your Last Name" maxlength="15" class="ele">
+                <br>
+                <label for="addr" class="ele">Address : </label>
+                <address>
+                <textarea name="Address" id="addr" cols="15" rows="3" maxlength="75" class="ele"></textarea>
+            </address>
+                <br>
+                <label for="pc" class="ele">Pincode : </label>
+                <input type="text" id="pc" name="Pincode" maxlength="8" class="ele">
+                <br>
+                <label for="" class="ele">Gender : </label>
+                <input type="radio" id="male" name="Gender" value="Male" class="ele">
+                <label for="male" class="ele"> Male</label>
+                <input type="radio" id="female" name="Gender" value="Female" class="ele">
+                <label for="female" class="ele">Female</label>
+                <br>
+                <label for="" class="ele">Choice of Food : </label>
+                <input type="checkbox" id="idly" class="food" value="Idly" class="ele">
+                <label for="idly" class="ele">Idly</label>
+                <input type="checkbox" id="dosa" class="food" value="Dosa" class="ele">
+                <label for="dosa" class="ele">Dosa</label>
+                <input type="checkbox" id="roti" class="food" value="Roti" class="ele">
+                <label for="roti" class="ele">Roti</label>
+                <input type="checkbox" class="ele" id="fruits" class="food" value="Fruits">
+                <label for="fruits" class="ele">Fruits</label>
+                <input type="checkbox" class="ele" id="cereals" class="food" value="Cereals">
+                <label for="cereals" class="ele">Cereals</label>
+                <br>
+                <label for="state" class="ele">State :  </label>
+                <input type="text" class="ele" id="state" name="State" placeholder="Enter your State">
+                <br>
+                <label for="country" class="ele">Country :  </label>
+                <input type="text" class="ele" id="country" name="Country" placeholder="Enter your Country">
+                <br>
+                <input type="button" class="ele" id="button" value="Submit">
+            </form>
+        </div>
+
+
+        <div id="table">
+            <table id="tb">
+                <thead>
+                    <th>First_Name</th>
+                    <th>Last_Name</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                    <th>State</th>
+                    <th>Country</th>
+
+                </thead>
+
+
+                <tr>
+                    <td>Shyam</td>
+                    <td>Manikandan</td>
+                    <td>Thirunagar,Madurai</td>
+                    <td>625006</td>
+                    <td>Male</td>
+                    <td>Pasta,Dosa,parotta</td>
+                    <td>Tamil Nadu</td>
+                    <td>India</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
