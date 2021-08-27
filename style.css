@@ -41,11 +41,15 @@ th,
 td {
     height: 70px;
     vertical-align: super;
+    max-width: 150px;
+    word-break: break-all;
 }
 
 #myForm {
     margin: 10px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 input[type="text"] {
@@ -62,4 +66,17 @@ input[type="text"] {
 .ele {
     margin: 10px 0;
     font-weight: bolder;
+}
+
+@media(max-width:900px) {
+    #myForm {
+        display: flex;
+        flex-direction: column;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+    }
 }
